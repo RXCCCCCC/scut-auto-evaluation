@@ -23,6 +23,26 @@
 
 运行示例：打开要评教的页面，等待脚本在控制台输出日志（包含“检测到题目和提交按钮，开始填写...”等信息），观察自动填写与提交过程。
 
+## 通过 Greasy Fork + Tampermonkey 安装（推荐）
+
+1. 在浏览器中安装 Tampermonkey（Chrome/Edge：Tampermonkey，Firefox：Tampermonkey 或 Greasemonkey）。
+2. 打开本脚本在 Greasy Fork 的页面：
+
+	https://greasyfork.org/en/scripts/561829-scut%E8%87%AA%E5%8A%A8%E8%AF%84%E6%95%99%E8%84%9A%E6%9C%AC
+
+3. 点击页面中的 “Install this script” 或 “Install” 按钮：
+	- 若浏览器弹出 Tampermonkey 的安装窗口，确认并保存脚本；
+	- 若弹出原始脚本内容，Tampermonkey 会自动将其导入，点击保存/启用即可。
+4. 安装后确认脚本已在 Tampermonkey 仪表板中启用（开关为 ON）。
+5. 手动打开目标评教的“具体打分题目页面”，脚本会在页面加载后自动运行。
+
+提示与常见问题：
+- 如果 Tampermonkey 没有在该页面运行，检查 Tampermonkey 的“包含/排除”设置和脚本的 `@match` 规则，确保 `pj.jw.scut.edu.cn` 被允许。  
+- 若 Greasy Fork 页面显示旧版本或发生更新延迟，点击 Greasy Fork 上的“Versions”或在 Tampermonkey 中使用“Check for updates”。
+- 如果你更偏好手动安装：在 Tampermonkey 中选择“创建新脚本”，将 `scut-auto-evaluation.js` 的完整内容粘贴进去并保存。
+
+## 可定制项
+
 ## 可定制项
 
 脚本当前为“默认自动提交”模式：若想改为“仅填写不自动提交”或加入确认，可以作以下修改：
