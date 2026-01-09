@@ -34,14 +34,12 @@
 	- 若浏览器弹出 Tampermonkey 的安装窗口，确认并保存脚本；
 	- 若弹出原始脚本内容，Tampermonkey 会自动将其导入，点击保存/启用即可。
 4. 安装后确认脚本已在 Tampermonkey 仪表板中启用（开关为 ON）。
-5. 手动打开目标评教的“具体打分题目页面”，脚本会在页面加载后自动运行。
+5. 进入[华工评教网页](https://pj.jw.scut.edu.cn/)手动打开目标评教的“具体打分题目页面”，脚本会在页面加载后自动运行。
 
 提示与常见问题：
 - 如果 Tampermonkey 没有在该页面运行，检查 Tampermonkey 的“包含/排除”设置和脚本的 `@match` 规则，确保 `pj.jw.scut.edu.cn` 被允许。  
 - 若 Greasy Fork 页面显示旧版本或发生更新延迟，点击 Greasy Fork 上的“Versions”或在 Tampermonkey 中使用“Check for updates”。
 - 如果你更偏好手动安装：在 Tampermonkey 中选择“创建新脚本”，将 `scut-auto-evaluation.js` 的完整内容粘贴进去并保存。
-
-## 可定制项
 
 ## 可定制项
 
